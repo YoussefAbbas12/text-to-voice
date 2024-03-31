@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Voice Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <input type="file" id="pdf-file" accept=".pdf">
+            <button onclick="convertToAudio()">تحويل إلى ملف صوتي</button>
+        </div>                
+        <textarea class="text" placeholder="Write anything here..."></textarea>
+        <div class="row">
+            <select></select>
+            <button class="listen"><img src="images\play.png">Listen</button>            
+        </div>
+    </div>
+
+    <py-script> print('Now you can!') </py-script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js" integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
